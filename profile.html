@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>My Dashboard</h1>
+  <div>
+    <a href="home.html" target="_self" class="btn btn-outline">Home</a>
+    <button class="btn btn-outline" onclick="logout()">Logout</button>
+  </div>
+</header>
+
+<main class="profile-layout">
+  <div class="card">
+    <h3>Upload Artwork</h3>
+    <p>(Maximum 7 images allowed)</p>
+
+    <input type="file" id="imageInput" accept="image/*">
+    <button type="button" class="btn" onclick="uploadImage()">Upload</button>
+
+    <p id="profileLink"></p>
+  </div>
+
+  <div>
+    <h3>My Uploads</h3>
+    <div id="myGallery" class="gallery"></div>
+  </div>
+</main>
+
+<script src="javascript/storage.js"></script>
+<script src="javascript/profile.js"></script>
+<script src="javascript/auth.js"></script>
+</body>
+</html>
